@@ -32,7 +32,7 @@ Pyrogram==1.0.7
 PySocks==1.7.1
 pyTelegramBotAPI==4.12.0
 python-decouple==3.8
-python-dotenv==1.0.0
+python-dotenv
 python-telegram-bot==12.0.0
 pytz==2023.3
 requests==2.31.0
