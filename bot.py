@@ -21,6 +21,7 @@ logging.basicConfig(level=logging.INFO)
 api_id = os.getenv("API_ID")
 api_hash = os.getenv("API_HASH")
 bot_token = os.getenv("BOT_TOKEN")
+phone_number = os.getenv("PHONE_NUMBER")
 
 # Initialize Telegram client and bot
 client = TelegramClient('erwerber77', api_id, api_hash)
@@ -317,7 +318,7 @@ async def send_last_messages(channel_id=None, limit=None):
 
 
 async def main():
-    await client.start()
+    await client.start(phone=phone_number)
     await client.connect()
 
     dp.register_message_handler(start, commands=['start'], commands_prefix='/')
