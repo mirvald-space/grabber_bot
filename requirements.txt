@@ -24,7 +24,7 @@ httpx==0.24.1
 idna==3.4
 magic-filter==1.0.9
 multidict==6.0.4
-Pillow==10.0.0
+Pillow
 pyaes==1.6.1
 pyasn1==0.5.0
 pycparser==2.21
